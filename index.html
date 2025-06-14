@@ -21,8 +21,19 @@
     let data = localStorage.setItem('User', user)
 
     // get data
-localStorage.getItem = localStorage.getItem('User')
-console.log(getdata);
+    let getItem = localStorage.getItem('User')
+    console.log(getItem);
+
+    let dataList = localStorage.setItem('LIST', list)
+
+    let getData = localStorage.getItem('LIST')
+    console.log(getData);
+
+    //xóa item chỉ định
+    localStorage.removeItem('User')
+    
+    //xóa hết
+    localStorage.clear()
 
 </script>
 
